@@ -1,0 +1,24 @@
+/* CONFIGURAÇÃO DO GIT
+
+/* para abrir o git e configurar os Alias rode o comando:
+
+git config --global core.editor code -> (Com este comando o git será aberto para edição diretamenste no VSCODE)
+
+git config --global --edit -> (com este comando será aberto o o arquivo para edição)
+
+
+[core]
+	editor = code --wait
+[user]
+  name = UserName
+	email = anys@email.com
+[push]
+  follwTags = true
+
+[alias]
+ s = !git status -s
+ c = !git add --all && git commit -m
+ l = !git log
+ p = !git push
+
+
