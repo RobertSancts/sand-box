@@ -22,3 +22,29 @@ git config --global --edit -> (com este comando será aberto o o arquivo para ed
  p = !git push
 
 
+/*CONFIGURAÇÃO DO JEST*/
+
+Adicionando o jeste ao Projeto
+ yarn add jest @types/jest ts-jest -D
+
+ yarn jest --init (Criando o jest.config)
+
+CONFIGURAÇÃO iniciais :
+
+export default {
+  roots: ['<rootDir>'],// diretorio raiz que será considerado nos testes
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],// considerando os arquivos .ts
+  coverageDirectory: 'coverage',
+  testEnvironment: 'node',
+  transform: {
+    '.+\\.ts$': 'ts-jest',
+  }, //passando ao ts-jest os arquivos .ts
+};
+
+*code do testes*
+
+describe('', () => {
+  test('', () => {});
+});
+
+
