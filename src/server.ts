@@ -1,6 +1,7 @@
 import express from 'express';
 
+const port = 5555;
 const server = express();
-server.listen(5555, () => {
-  console.log('Sitem is Running');
+server.listen(port, () => {
+  // console.log(`Server is Running at port: ${port}`);
 });
